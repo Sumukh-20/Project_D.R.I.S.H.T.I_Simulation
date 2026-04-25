@@ -11,4 +11,16 @@ This repository contains the software simulation for the D.R.I.S.T.I project. It
 * `start_dristi.bat`: A simple Windows batch script to launch both the sensor simulation and the gateway UI simultaneously.
 
 ### How to Run:
-Simply double-click the `start_dristi.bat` file to launch the simulation pipeline.
+
+**Method 1: Using the Batch File (Windows Only)**
+Simply double-click the `start_dristi.bat` file. This will automatically open the necessary command windows and launch the entire simulation pipeline.
+
+**Method 2: Manual Execution (Command Line/Terminal)**
+If you prefer to run the scripts manually or are not using Windows:
+1. Open two separate terminal or command prompt windows.
+2. In the first window, start the sensor simulation by running:
+   ```bash
+   python fake_esp32.py
+3. In the second window, start the gateway UI by running
+   ```bash
+   python pi_gateway.py 
